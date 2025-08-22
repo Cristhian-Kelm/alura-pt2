@@ -25,4 +25,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: cristhian/go_ci_tst:${{ github.ref_name }}
+        tags: cristhiankelm/go_ci_tst:${{ github.ref_name }}
