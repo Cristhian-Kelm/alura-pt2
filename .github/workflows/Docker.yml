@@ -18,8 +18,7 @@ jobs:
       with:
         username: cristhiankelm
         password: ${{ secrets.PASSWORD_DOCKER_HUB }}
-          
-          
+
     - name: Build and push Docker images
       uses: docker/build-push-action@v6.18.0
       with:
@@ -27,4 +26,3 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: cristhian/go_ci_tst:${{ github.ref_name }}
-          
